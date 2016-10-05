@@ -1,0 +1,12 @@
+.lb-sm {
+    font-size: 11px;
+    padding: 5px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
