@@ -15,6 +15,8 @@
 
 </script>
 
+<%@ include file="index.jsp" %>
+
 <div class="container text-center">
 
     <div id="loginModal" class="modal">

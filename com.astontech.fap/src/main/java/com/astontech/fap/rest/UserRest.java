@@ -61,6 +61,8 @@ public class UserRest {
             userDetailsService.createUser(userDetails);
             userService.saveUser(user);
             jdbcTemplate.update("update users set person_id = ? where username = ?", user.getId(), user.getUsername());
+        } else {
+            userService.saveUser(user);
         }
 
         return user;

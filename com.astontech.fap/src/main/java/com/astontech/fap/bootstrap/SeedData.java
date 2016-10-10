@@ -1,6 +1,8 @@
 package com.astontech.fap.bootstrap;
 
+import com.astontech.fap.domain.State;
 import com.astontech.fap.domain.User;
+import com.astontech.fap.services.StateService;
 import com.astontech.fap.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
@@ -16,9 +18,18 @@ public class SeedData implements ApplicationListener<ContextRefreshedEvent>{
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private StateService stateService;
+
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
         //generateUsers();
+        //generateState();
+    }
+
+    private void generateState() {
+        State state = new State("Minnesota", "MN");
+        stateService.saveState(state);
     }
 
     private void generateUsers() {

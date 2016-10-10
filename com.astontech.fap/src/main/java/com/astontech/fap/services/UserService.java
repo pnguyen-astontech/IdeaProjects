@@ -11,9 +11,13 @@ public interface UserService {
 
     User getUserById(Integer id);
 
+    Integer getIdByUsername(String username);
+
     User saveUser(User user);
 
     Iterable<User> saveUserList(Iterable<User> userIterable);
 
     void deleteUser(Integer id);
+
+
 }

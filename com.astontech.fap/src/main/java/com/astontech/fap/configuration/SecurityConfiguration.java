@@ -80,7 +80,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .defaultSuccessUrl("/", true).failureUrl("/login?err=1")
                 .usernameParameter("username").passwordParameter("password")
                 .and()
-                .exceptionHandling().accessDeniedPage("/403");
+                .exceptionHandling().accessDeniedPage("/error/403");
 
         httpSecurity.csrf().disable();
         httpSecurity.headers().frameOptions().disable();

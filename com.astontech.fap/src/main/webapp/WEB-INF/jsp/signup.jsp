@@ -38,7 +38,7 @@
                     <div class="form-group">
                         <label class="col-xs-12" for="inputPassword">Create password</label>
                         <div class="col-xs-12">
-                            <input class="form-control" type="text" id="inputPassword"/>
+                            <input class="form-control" type="password" id="inputPassword"/>
                             <span class="help-block">Help text goes here...</span>
                         </div>
                     </div>
@@ -46,14 +46,20 @@
                     <div class="form-group">
                         <label class="col-xs-12" for="confirmPassword">Confirm password</label>
                         <div class="col-xs-12">
-                            <input class="form-control" type="text" id="confirmPassword"/>
+                            <input class="form-control" type="password" id="confirmPassword"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label class="col-xs-12" for="inputBirthDate">Birthday</label>
-                        <div class="col-xs-12">
-                            <input class="form-control" type="text" id="inputBirthDate"/>
+                        <label class="col-xs-12">Birthday</label>
+                        <div class="col-xs-4">
+                            <input class="form-control" type="text" id="inputBirthDay" placeholder="Day"/>
+                        </div>
+                        <div class="col-xs-4">
+                            <input class="form-control" type="text" id="inputBirthMonth" placeholder="Month"/>
+                        </div>
+                        <div class="col-xs-4">
+                            <input class="form-control" type="text" id="inputBirthYear" placeholder="Year"/>
                         </div>
                     </div>
 

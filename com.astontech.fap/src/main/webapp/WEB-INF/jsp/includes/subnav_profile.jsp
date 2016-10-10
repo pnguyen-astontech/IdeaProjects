@@ -1,15 +1,4 @@
-<script>
-    $(document).ready(function () {
-        $('#editProfileLink').click(function () {
-            $('#editProfile').modal('show');
-            return false;
-        })
-    })
-</script>
-
-
-
-<nav class="navbar navbar-fixed-bottom">
+<nav class="navbar">
     <div class="container-fluid">
         <div class="navbar-header">
             <%--ADMIN HOME--%>
@@ -19,14 +8,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/profile">Profile</a>
+            <a class="navbar-brand" href="/profile/${profileUsername}">Profile</a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-2">
             <ul class="nav navbar-nav">
                 <%--PAGE LINKS--%>
-                <li><a id="editProfileLink">Edit</a></li>
+                <li><a onclick="editProfile(${profileId})">Edit</a></li>
             </ul>
-            <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+            <p class="navbar-text navbar-right">Signed in as <a class="navbar-link">${profileUsername}</a></p>
         </div>
 
     </div>

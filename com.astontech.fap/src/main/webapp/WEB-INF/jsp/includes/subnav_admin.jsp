@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar">
     <div class="container-fluid">
         <div class="navbar-header">
             <%--ADMIN HOME--%>
@@ -13,7 +13,9 @@
         <div class="collapse navbar-collapse" id="navbar-collapse-2">
             <ul class="nav navbar-nav">
                 <%--PAGE LINKS--%>
-                <li><a href="/admin/user/admin_user_add">User</a></li>
+                <li><a href="/admin/state/admin_state_list">State</a></li>
+                <li><a href="/admin/user/admin_user_list">User</a></li>
+
             </ul>
         </div>
     </div>

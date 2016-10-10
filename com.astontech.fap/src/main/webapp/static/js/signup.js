@@ -19,7 +19,7 @@ function newUser() {
         async: true,
         dataType: "json",
         success: function () {
-            window.location='/profile'
+            window.location='/'
         }
     })
 }

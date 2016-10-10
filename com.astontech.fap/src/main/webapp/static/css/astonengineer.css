@@ -1,6 +1,42 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-bottom: 100px;
+    padding-top: 45px;
+}
+
+.footer-float {
+    float: left;
+    list-style-type: none;
+}
+.footer {
+    width: 100%;
+    background-color: #222222;
+    color: #ffffff;
+    position: absolute;
+    padding-bottom: 25px;
+    bottom: 0;
+}
+
+.float-right {
+    clear: both;
+    float: right;
+}
+
 .lb-sm {
-    font-size: 11px;
+    font-size: 12px;
     padding: 5px;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.height-100 {
+    height: 100% !important;
 }
 
 .hidden {
@@ -10,3 +46,52 @@
 .visible {
     visibility: visible;
 }
+
+.carousel{
+    height: 75%;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.shift-up {
+    padding-bottom: 25%;
+}
+
+.shift-down {
+    padding-top: 3%;
+}
+
+.shift-down-img {
+    padding-top: 7%;
+}
+
+.shift-down-25 {
+    padding-top: 25%;
+}
+
+.image-text {
+    margin: 0;
+}
+
+.btn-transparent {
+    background: none;
+    border: none !important;
+    box-shadow: none !important;
+    outline-style: none !important;
+}
+
+.text-black {
+    color: #000000;
+}
+

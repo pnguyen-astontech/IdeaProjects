@@ -17,15 +17,9 @@
     <c:url value="/webjars/bootstrap/3.3.4/js/bootstrap.min.js" var="bootstrapJS" />
     <script src="${bootstrapJS}"></script>
 
-    <%--<c:url value="/webjars/bootstrap/3.3.4/css/bootstrap.min.css" var="bootstrapCSS" />--%>
-    <%--<link href="${bootstrapCSS}" rel="stylesheet" media="screen" />--%>
-
     <%--BOOTSWATCH--%>
-    <c:url value="/static/css/bootswatch_journal.css" var="bootstrapCSS" />
+    <c:url value="/static/css/bootswatch_yeti.css" var="bootstrapCSS" />
     <link href="${bootstrapCSS}" rel="stylesheet" media="screen" />
-
-    <%--<c:url value="/static/css/bootstrap_big_pic.css" var="bootstrapCSS2" />--%>
-    <%--<link href="${bootstrapCSS2}" rel="stylesheet" media="screen" />--%>
 
     <%--CUSTOM JS--%>
     <c:url value="/static/js/common.js" var="common" />
